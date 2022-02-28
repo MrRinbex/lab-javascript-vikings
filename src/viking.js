@@ -50,8 +50,26 @@ class War {
   vikingArmy = [];
   saxonArmy = [];
   
-  addViking(Viking){
-    // i will try to finish this evening 
+  addViking(viking){
+    this.vikingArmy.push(viking)
+  }
+  addSaxon(saxon){
+    this.saxonArmy.push(saxon)
+  }
+  vikingAttack(){
+   
+  }
+  saxonAttack(){
+
+  }
+  showStatus(){
+    if (this.saxonArmy <= 0){
+    return "Vikings have won the war of the century!";
+    } else if(this.vikingArmy <= 0){
+    return "Saxons have fought for their lives and survived another day...";
+    } else{
+    return "Vikings and Saxons are still in the thick of battle.";
+    }
   }
 }
 
